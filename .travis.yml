@@ -10,3 +10,5 @@ script:
   - docker build -t kogosoftware/kogo-base-build:$SHORT_SHA .
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - docker push kogosoftware/kogo-base-build:$SHORT_SHA
+  - docker tag kogosoftware/kogo-base-build:$SHORT_SHA tag kogosoftware/kogo-base-build:latest
+  - docker push kogosoftware/kogo-base-build:latest
