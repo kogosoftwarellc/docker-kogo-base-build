@@ -6,5 +6,8 @@ services:
   - docker
 
 script:
-  - env
-  - ls -al
+  - export SHORT_SHA="${TRAVIS_COMMIT:0:7}"
+  - env | sort
+  - docker build -t kogosoftware/kogo-base-build:$SHORT_SHA .
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker push kogosoftware/kogo-base-build:$SHORT_SHA
