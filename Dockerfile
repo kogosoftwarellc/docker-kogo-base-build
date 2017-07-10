@@ -7,6 +7,7 @@ RUN apt-get update -y \
     && apt-get install -y \
       build-essential \
       curl \
+      git \
       python-pip \
       wget \
     && pip install awscli \
