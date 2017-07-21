@@ -13,3 +13,5 @@ RUN apt-get update -y \
     && pip install awscli \
     && curl -s https://raw.githubusercontent.com/kogosoftwarellc/bash-slack/master/slack-post-to-channel > /usr/local/bin/slack-post-to-channel \
     && chmod +x /usr/local/bin/slack-post-to-channel
+
+ADD rancher-compose-v0.12.5 /usr/local/bin/rancher-compose
