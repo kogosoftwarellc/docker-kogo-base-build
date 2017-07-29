@@ -1,4 +1,4 @@
-# kogo-base-build
+# kogo-base-build [![Build Status][travis-image]][travis-url]
 > A base ubuntu image for other build images.
 
 A build image is typically something we use to build an artifact, like a C binary or
@@ -33,3 +33,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ``````
+
+[travis-url]: https://travis-ci.org/kogosoftwarellc/docker-kogo-base-build
+[travis-image]: http://img.shields.io/travis/kogosoftwarellc/docker-kogo-base-build.svg
