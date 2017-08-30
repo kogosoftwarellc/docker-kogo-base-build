@@ -5,6 +5,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 RUN apt-get update -y \
     && apt-get install -y \
+      libpcre3 libpcre3-dev \
       build-essential \
       curl \
       git \
